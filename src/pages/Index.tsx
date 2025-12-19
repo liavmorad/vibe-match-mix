@@ -42,7 +42,7 @@ const Index = () => {
             <div className="w-10 h-10 rounded-xl bg-primary/20 flex items-center justify-center">
               <Music className="w-5 h-5 text-primary" />
             </div>
-            <span className="font-display text-xl font-bold">VibeMix</span>
+            <span className="font-display text-xl font-bold">JamOn</span>
           </div>
           <Button variant="glass" onClick={() => navigate("/join")}>
             <QrCode className="w-4 h-4" />
