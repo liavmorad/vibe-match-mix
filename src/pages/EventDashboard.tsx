@@ -64,7 +64,7 @@ const EventDashboard = () => {
             <div className="w-10 h-10 rounded-xl bg-primary/20 flex items-center justify-center">
               <Music className="w-5 h-5 text-primary" />
             </div>
-            <span className="font-display text-xl font-bold">VibeMix</span>
+            <span className="font-display text-xl font-bold">JamOn</span>
           </div>
           <div className="flex items-center gap-2">
             <span className="text-sm text-muted-foreground">Event Code:</span>
@@ -188,7 +188,7 @@ const EventDashboard = () => {
                 <GlassCard hover={false}>
                   <div className="flex items-center justify-between mb-6">
                     <div>
-                      <h2 className="font-display text-2xl font-bold">Your VibeMix</h2>
+                      <h2 className="font-display text-2xl font-bold">Your JamOn Mix</h2>
                       <p className="text-muted-foreground">{mockPlaylist.length} tracks • ~18 min</p>
                     </div>
                     <Button variant="glow">
