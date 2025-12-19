@@ -8,6 +8,7 @@ import CreateEvent from "./pages/CreateEvent";
 import JoinEvent from "./pages/JoinEvent";
 import EventDashboard from "./pages/EventDashboard";
 import YourEvents from "./pages/YourEvents";
+import Login from "./pages/Login";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -20,6 +21,7 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/login" element={<Login />} />
           <Route path="/create" element={<CreateEvent />} />
           <Route path="/join" element={<JoinEvent />} />
           <Route path="/join/:eventId" element={<JoinEvent />} />
