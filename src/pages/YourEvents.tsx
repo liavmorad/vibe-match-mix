@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Music, Users, Calendar, Plus, ArrowRight } from "lucide-react";
+import { Music, Users, Calendar, Plus, ArrowRight, Home } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import ParticleBackground from "@/components/ParticleBackground";
@@ -52,10 +52,16 @@ const YourEvents = () => {
             </div>
             <span className="font-display text-xl font-bold">JamOn</span>
           </div>
-          <Button variant="glow" onClick={() => navigate("/create")}>
-            <Plus className="w-4 h-4 mr-2" />
-            New Event
-          </Button>
+          <div className="flex items-center gap-3">
+            <Button variant="ghost" onClick={() => navigate("/")}>
+              <Home className="w-4 h-4 mr-2" />
+              Home
+            </Button>
+            <Button variant="glow" onClick={() => navigate("/create")}>
+              <Plus className="w-4 h-4 mr-2" />
+              New Event
+            </Button>
+          </div>
         </motion.header>
 
         {/* Main Content */}
