@@ -44,10 +44,15 @@ const Index = () => {
             </div>
             <span className="font-display text-xl font-bold">JamOn</span>
           </div>
-          <Button variant="glass" onClick={() => navigate("/join")}>
-            <QrCode className="w-4 h-4" />
-            Join Event
-          </Button>
+          <div className="flex items-center gap-3">
+            <Button variant="ghost" onClick={() => navigate("/events")}>
+              Your Events
+            </Button>
+            <Button variant="glass" onClick={() => navigate("/join")}>
+              <QrCode className="w-4 h-4" />
+              Join Event
+            </Button>
+          </div>
         </motion.header>
 
         {/* Hero */}
